@@ -23,7 +23,7 @@ namespace API.Controllers
 
             var user = new AppUser
             {
-                Username = username,
+                UserName = username,
                 PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password)),
                 PasswordSalt = hmac.Key
             };
